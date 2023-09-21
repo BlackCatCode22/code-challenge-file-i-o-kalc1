@@ -7,3 +7,8 @@
 # Programmer's name: __Kevin_Alcocer___
 #
 # ********************************************************************************************
+
+# This code reads the .txt file that includes the escape character "/n"
+arrivingAnimals = open('arrivingAnimals.txt', 'r')
+read_Animals = arrivingAnimals.readlines()
+print(read_Animals)
