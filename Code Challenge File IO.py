@@ -30,3 +30,12 @@ for animal in Animals_list:
     outputFile.write(animal)
     outputFile.write("\n")
 outputFile.close()
+
+# ********************************************************************************************
+
+def get_species(my_str):
+    # Split my_str using the character space
+    words = my_str.split()
+    # TODO: find the data type of words. What can you do with words?
+    return words[4]
+print(get_species("12 year old male lion"))
