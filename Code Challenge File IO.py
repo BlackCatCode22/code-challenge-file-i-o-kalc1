@@ -23,3 +23,7 @@ for animal in read_Animals:
 # Each line should contain 6 substrings: 1.Animal 2.Season Born 3.Color 4.Weight 5.From 6. Country
 # Will need to use split(',') at some point in order to make the above happen. <- Makes a list out of a string 
 
+# Using this I can now see each line from the text file printed out on seperate lines, with each line being a list I can manipulate.  
+for animal in Animals_list:
+    print(animal[0])
+    
