@@ -24,7 +24,9 @@ for animal in read_Animals:
 
 outputFile = open('outputFile.txt', 'w')    
 
-# Using this I can now see each line from the text file printed out on seperate lines. 
+# Using a for-loop enables me to write each seperate line into the outputFile.txt 
+# However, each 'animal in Animals_list' is not on a seperate line.  
 for animal in Animals_list:
     outputFile.write(animal)
+    outputFile.write("\n")
 outputFile.close()
