@@ -33,11 +33,16 @@ for animal in Animals_list:
 outputFile.close()
 
 # ********************************************************************************************
-
 def get_species(my_str):
     # Split my_str using the character space. 
     words = my_str.split()
     # TODO: find the data type of words. What can you do with words?
     # This turns it into a list. You can use indices to take the fifth word to output the type of animal. 
     return words[4]
-print(get_species(input("Enter the arriving animal: ")))
+
+my_str = input("Enter the arriving animal: ")
+
+try:
+    print(get_species(my_str))
+except: 
+    print("Invalid Input")
