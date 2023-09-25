@@ -42,7 +42,7 @@ def get_species(my_str):
 
 my_str = input("Enter the arriving animal: ")
 
-# IndexError means an index is out of range
+# IndexError means an index is out of range. It is run when words equals to less than 5 indices since the program failed to return index [4] from words.
 
 try:
     print(get_species(my_str))
