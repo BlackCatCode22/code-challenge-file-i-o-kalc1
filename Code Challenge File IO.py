@@ -42,7 +42,11 @@ def get_species(my_str):
 
 my_str = input("Enter the arriving animal: ")
 
+# IndexError means an index is out of range
+
 try:
     print(get_species(my_str))
-except: 
+except IndexError:
+    print("Error: Your input must contain at least 5 words")
+except:    
     print("Invalid Input")
